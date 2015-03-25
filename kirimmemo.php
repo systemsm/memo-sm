@@ -34,19 +34,19 @@ mysql_select_db('SIMIS');
 // print_r($_REQUEST);
 IF (isset($_REQUEST['perihal'])) {
 $perihal = $_REQUEST['perihal'];
-}
+} ELSE { $perihal = '' }
 IF (isset($_REQUEST['editor1'])) {
 $isimemo = $_REQUEST['editor1'];
-}
+} ELSE { EXIT; }
 IF (isset($_REQUEST['nama']) ){
 $nama =  $_REQUEST['nama'];
-}
+} ELSE { EXIT; }
 IF (isset($_REQUEST['nik']) ){
 $nik =  $_REQUEST['nik'];
-}
+} ELSE { EXIT; }
 IF (isset($_REQUEST['bagian'])) {
 $bagian =  $_REQUEST['bagian'];
-}
+} ELSE { EXIT; }
 IF (isset($_REQUEST['email']) ){
 $email =  $_REQUEST['email'];
 }
